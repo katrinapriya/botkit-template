@@ -23,7 +23,7 @@ module.exports = function (controller) {
             var help = "Type `help` to learn about my skills.";
 
             if (rawMessage.roomType == "group") {
-                help = "Note that this is a 'Group' space. I will answer only if mentionned.<br/>";
+                help = "Note that this is a 'Group' space. I will answer only if mentioned.<br/>";
                 help += "To learn about my skills, type " + bot.appendMention(rawMessage, "help");
             }
 
