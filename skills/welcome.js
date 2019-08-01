@@ -5,7 +5,7 @@ module.exports = function (controller) {
 
     controller.on('bot_space_join', function (bot, event) {
 
-        var welcome = `Hi <@personId:${event.actorId}>, so glad meeting you!`;
+        var welcome = `Hi <@personId:${event.actorId}>, nice to meet you :)`;
 
         if (this.identity) {
             welcome += `<br/>I am the **${this.identity.displayName}** bot`;
