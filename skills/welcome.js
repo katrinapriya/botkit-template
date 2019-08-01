@@ -32,7 +32,7 @@ module.exports = function (controller) {
                 channel: rawMessage.roomId
             }, function (err, messageAck) {
                 if (err) {
-                    console.log("Error while postig back help message, err: " + err.message)
+                    console.log("Error while posting back help message, err: " + err.message)
                     return;
                 }
             });
