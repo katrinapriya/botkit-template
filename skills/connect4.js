@@ -18,7 +18,7 @@ module.exports = function (controller) {
       
         let options = { method: 'POST',
             url: "https://api.ciscospark.com/v1/rooms",
-            headers: { "Authorization" : "Bearer " + controller.ciscospark_access_token,
+            headers: { "Authorization" : "Bearer " + controller.access_token,
             'Content-Type': 'application/json' },
             body: { "title" : "BridgeB"},
             json: true };
@@ -38,7 +38,7 @@ module.exports = function (controller) {
 
   function getId(cb) {
     var resp = [];
-    access_token = 'NGExMjA3MjUtZTMxNS00NGNmLTg1YTUtZTBjZjNjOTc5ZTgzMTMzMmEzZjUtMDg5_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f';
+
     var request = require("request");
   
     let options = { method: 'GET',
@@ -71,7 +71,6 @@ module.exports = function (controller) {
 }
   function ListMembers(id) {
     var resp = [];
-    access_token = 'NGExMjA3MjUtZTMxNS00NGNmLTg1YTUtZTBjZjNjOTc5ZTgzMTMzMmEzZjUtMDg5_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f';
     var request = require("request");
   
     let options = { method: 'GET',
