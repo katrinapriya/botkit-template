@@ -17,7 +17,7 @@ module.exports = function (controller) {
       
         let options = { method: 'POST',
             url: "https://api.ciscospark.com/v1/rooms",
-            headers: { "Authorization" : "Bearer " + ACCESS_TOKEN,
+            headers: { "Authorization" : "Bearer " + process.env.ACCESS_TOKEN,
             'Content-Type': 'application/json' },
             body: { "title" : "BridgeB"},
             json: true };
