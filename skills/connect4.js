@@ -1,3 +1,5 @@
+// Load environment variables from project .env file
+require('node-env-file')(__dirname + '/.env');
 module.exports = function (controller) {
   
      controller.hears(['connect4'], 'direct_message,direct_mention', function (bot, message) {
